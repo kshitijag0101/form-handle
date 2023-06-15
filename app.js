@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors({
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
-    origin: ['http://kshitijagarwal.dev']
+    origin: ['https://kshitijagarwal.dev']
 }));
 
 const transporter = nodemailer.createTransport({
