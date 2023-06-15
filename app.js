@@ -38,7 +38,7 @@ app.post('/', async (req, res, next) => {
                 Message: ${contactMessage}<br>
             `
         });
-        res.status(200).json({message: 'Email Sent'})
+        return res.status(200).json({message: 'Email Sent'})
     }
     catch(err){
         console.log(err);
